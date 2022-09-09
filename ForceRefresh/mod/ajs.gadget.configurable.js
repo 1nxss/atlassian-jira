@@ -136,7 +136,7 @@ var Configurable =  function (options) {
                         description: gadget.getMsg("gadget.common.refresh.description"),
                         selected: gadget.getPref("refresh"),
                         options: [
-                            {value: "false", label: gadget.getMsg("gadget.common.refresh.never")},
+                            {value: "5", label: gadget.getMsg("gadget.common.refresh.never")},
                             {value: "15", label: AJS.format(gadget.getMsg("gadget.common.refresh.minutes"), 15)},
                             {value: "30", label: AJS.format(gadget.getMsg("gadget.common.refresh.minutes"), 30)},
                             {value: "60", label: AJS.format(gadget.getMsg("gadget.common.refresh.hour"), 1)},
