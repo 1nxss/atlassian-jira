@@ -53,3 +53,8 @@ UPDATE gadgetuserpreference SET userprefvalue='false' WHERE userprefkey='refresh
 -   Start JIRA back
 
 Note that any active dashboards will need to be reloaded for new setting to take effect.
+
+## Scene 3
+You may to use external plugin.
+[Global CSS and JS for Jira](https://marketplace.atlassian.com/apps/1219330/global-css-and-js-for-jira?hosting=server&tab=overview) by Yiraphic
+By the way, it's not tested with Data Center releases, but currently worked fine with 9.0.0 - 9.2.0 version. 
