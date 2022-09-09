@@ -56,5 +56,9 @@ Note that any active dashboards will need to be reloaded for new setting to take
 
 ## Scene 3
 You may to use external plugin.
-[Global CSS and JS for Jira](https://marketplace.atlassian.com/apps/1219330/global-css-and-js-for-jira?hosting=server&tab=overview) by Yiraphic
-By the way, it's not tested with Data Center releases, but currently worked fine with 9.0.0 - 9.2.0 version. 
+[Global CSS and JS for Jira](https://marketplace.atlassian.com/apps/1219330/global-css-and-js-for-jira) by Yiraphic
+
+- Jira Data Center 9.0.0 - 9.2.0
+ 
+ Version 1.4.8 • Released 2022-08-18 •  Made compatible with 9.1.0  •  Paid via Atlassian 
+ [Apache License, Version 2.0 (ASL)](http://www.apache.org/licenses/LICENSE-2.0.html) 
