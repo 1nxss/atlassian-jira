@@ -28,3 +28,28 @@ options: [
 -   Add the file back to the  `atlassian-bundled-plugins.zip`.
 -   To make sure that you will get fresh bundled plugins, remove all contents of  `$JIRA_HOME/plugins/.bundled-plugins`.
 - Start JIRA instance back
+
+## Scene 2
+Modifying the current values set for existing Gadgets.
+If you also wish to modify the current values that users may have for the refresh interval of their Gadgets.
+### Steps
+#### Before you start:
+- Backup your database first. In the case of problems, you can rollback!
+- Stop your JIRA instance.
+#### Modifications in the PostgreSQL database
+Update the  `userprefvalue`  column of the  `gadgetuserpreference`  table where the  `userprefkey`  is  `'refresh'`  to change the refresh interval of the gadgets (note that this is defined per gadget).
+You can set the auto refresh to a predetermined interval in minutes:
+
+SETTING ALL EXISTING GADGETS AUTO REFRESH INTERVAL TO 4 HOURS
+
+```sql
+UPDATE gadgetuserpreference SET userprefvalue='240' WHERE userprefkey='refresh';
+```
+DISABLING REFRESH IN ALL EXISTING GADGETS
+
+```sql
+UPDATE gadgetuserpreference SET userprefvalue='false' WHERE userprefkey='refresh';
+```
+-   Start JIRA back
+
+Note that any active dashboards will need to be reloaded for new setting to take effect.
