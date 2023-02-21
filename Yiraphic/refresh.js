@@ -1,4 +1,5 @@
 <script>
+/* Refresh script */
 /* Hide panels from users that are not logged in */
 /* Add logged-in class to body if user is not logged in */
 if (document.getElementsByClassName('login-link').length < 1) {
